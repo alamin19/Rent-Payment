@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2710991C2045AE6B00D848E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710991B2045AE6B00D848E7 /* AppDelegate.swift */; };
-		2710991E2045AE6B00D848E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710991D2045AE6B00D848E7 /* ViewController.swift */; };
 		271099212045AE6B00D848E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2710991F2045AE6B00D848E7 /* Main.storyboard */; };
 		271099242045AE6B00D848E7 /* Rent_Payment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 271099222045AE6B00D848E7 /* Rent_Payment.xcdatamodeld */; };
 		271099262045AE6B00D848E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271099252045AE6B00D848E7 /* Assets.xcassets */; };
 		271099292045AE6B00D848E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271099272045AE6B00D848E7 /* LaunchScreen.storyboard */; };
+		27F4465A2046FE6100EC9DE3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F446592046FE6100EC9DE3 /* HomeVC.swift */; };
+		27F4465C2046FE8100EC9DE3 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F4465B2046FE8100EC9DE3 /* PaymentVC.swift */; };
+		27F4465E2046FE9B00EC9DE3 /* EnquiryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F4465D2046FE9B00EC9DE3 /* EnquiryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		271099182045AE6B00D848E7 /* Rent Payment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rent Payment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2710991B2045AE6B00D848E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2710991D2045AE6B00D848E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		271099202045AE6B00D848E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		271099232045AE6B00D848E7 /* Rent_Payment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rent_Payment.xcdatamodel; sourceTree = "<group>"; };
 		271099252045AE6B00D848E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271099282045AE6B00D848E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2710992A2045AE6B00D848E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F446592046FE6100EC9DE3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		27F4465B2046FE8100EC9DE3 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		27F4465D2046FE9B00EC9DE3 /* EnquiryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnquiryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				2710991B2045AE6B00D848E7 /* AppDelegate.swift */,
-				2710991D2045AE6B00D848E7 /* ViewController.swift */,
+				27F446592046FE6100EC9DE3 /* HomeVC.swift */,
+				27F4465B2046FE8100EC9DE3 /* PaymentVC.swift */,
+				27F4465D2046FE9B00EC9DE3 /* EnquiryVC.swift */,
 				2710991F2045AE6B00D848E7 /* Main.storyboard */,
 				271099252045AE6B00D848E7 /* Assets.xcassets */,
 				271099272045AE6B00D848E7 /* LaunchScreen.storyboard */,
@@ -140,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				271099242045AE6B00D848E7 /* Rent_Payment.xcdatamodeld in Sources */,
-				2710991E2045AE6B00D848E7 /* ViewController.swift in Sources */,
+				27F4465C2046FE8100EC9DE3 /* PaymentVC.swift in Sources */,
+				27F4465A2046FE6100EC9DE3 /* HomeVC.swift in Sources */,
+				27F4465E2046FE9B00EC9DE3 /* EnquiryVC.swift in Sources */,
 				2710991C2045AE6B00D848E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,7 +29,7 @@
         <!--Pay-->
         <scene sceneID="hpU-Qe-U6x">
             <objects>
-                <viewController id="ePg-P7-HMF" sceneMemberID="viewController">
+                <viewController id="ePg-P7-HMF" customClass="PaymentVC" customModule="Rent_Payment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="azE-0H-ihT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
         <!--Home-->
         <scene sceneID="hRY-ay-Gct">
             <objects>
-                <viewController id="0Db-Il-fcq" sceneMemberID="viewController">
+                <viewController id="0Db-Il-fcq" customClass="HomeVC" customModule="Rent_Payment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tiD-2S-ZIu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYQ-Hl-6FS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773.5999999999999" y="-747.07646176911555"/>
+            <point key="canvasLocation" x="1503" y="-747"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="WMm-CH-RNT">
@@ -121,7 +121,7 @@
         <scene sceneID="1Wm-ft-Qy5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tG7-FV-V1w" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="dhT-Pt-fOG"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="ic_home" id="dhT-Pt-fOG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NAf-M3-wmm">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -140,7 +140,7 @@
         <scene sceneID="oAL-OT-ujz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IIZ-wR-8A9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Pay" id="QLB-OQ-EE4"/>
+                    <tabBarItem key="tabBarItem" title="Pay" image="ic_payment" id="QLB-OQ-EE4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6ga-9i-l3w">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -158,7 +158,7 @@
         <!--Enquiries-->
         <scene sceneID="sGG-wu-hry">
             <objects>
-                <viewController id="9E3-qU-dLr" sceneMemberID="viewController">
+                <viewController id="9E3-qU-dLr" customClass="EnquiryVC" customModule="Rent_Payment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ago-Mv-Ob2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,7 +175,7 @@
         <scene sceneID="CQt-4C-qDF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bvv-QM-qH1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Enquiries" id="7qT-fg-iZf"/>
+                    <tabBarItem key="tabBarItem" title="Enquiries" image="ic_enquiry" id="7qT-fg-iZf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fzp-2a-eCC">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -194,4 +194,9 @@
             <point key="canvasLocation" x="792" y="882.45877061469275"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_enquiry" width="24" height="24"/>
+        <image name="ic_home" width="24" height="24"/>
+        <image name="ic_payment" width="24" height="24"/>
+    </resources>
 </document>
