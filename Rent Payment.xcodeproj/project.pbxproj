@@ -12,12 +12,15 @@
 		271099242045AE6B00D848E7 /* Rent_Payment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 271099222045AE6B00D848E7 /* Rent_Payment.xcdatamodeld */; };
 		271099262045AE6B00D848E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271099252045AE6B00D848E7 /* Assets.xcassets */; };
 		271099292045AE6B00D848E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271099272045AE6B00D848E7 /* LaunchScreen.storyboard */; };
+		2715E5EF204AE4A700C44A5C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2715E5EE204AE4A700C44A5C /* MainTabBarController.swift */; };
 		27F4465A2046FE6100EC9DE3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F446592046FE6100EC9DE3 /* HomeVC.swift */; };
 		27F4465C2046FE8100EC9DE3 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F4465B2046FE8100EC9DE3 /* PaymentVC.swift */; };
 		27F4465E2046FE9B00EC9DE3 /* EnquiryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F4465D2046FE9B00EC9DE3 /* EnquiryVC.swift */; };
+		FDAE8438CBBAC412393CA594 /* Pods_Rent_Payment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574DB2DFC3FC848C95C63EB3 /* Pods_Rent_Payment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A3DF7B2FDB6D84A8604F81E /* Pods-Rent Payment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rent Payment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rent Payment/Pods-Rent Payment.debug.xcconfig"; sourceTree = "<group>"; };
 		271099182045AE6B00D848E7 /* Rent Payment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rent Payment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2710991B2045AE6B00D848E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		271099202045AE6B00D848E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,9 +28,12 @@
 		271099252045AE6B00D848E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271099282045AE6B00D848E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2710992A2045AE6B00D848E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2715E5EE204AE4A700C44A5C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		27F446592046FE6100EC9DE3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		27F4465B2046FE8100EC9DE3 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
 		27F4465D2046FE9B00EC9DE3 /* EnquiryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnquiryVC.swift; sourceTree = "<group>"; };
+		574DB2DFC3FC848C95C63EB3 /* Pods_Rent_Payment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rent_Payment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C596329B317EA899FC437BF5 /* Pods-Rent Payment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rent Payment.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rent Payment/Pods-Rent Payment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDAE8438CBBAC412393CA594 /* Pods_Rent_Payment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,8 @@
 			children = (
 				2710991A2045AE6B00D848E7 /* Rent Payment */,
 				271099192045AE6B00D848E7 /* Products */,
+				86084609AE6EEE8C34AF9BBE /* Pods */,
+				E2256F34D79B637D881D0CFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +71,7 @@
 			children = (
 				2710991B2045AE6B00D848E7 /* AppDelegate.swift */,
 				27F446592046FE6100EC9DE3 /* HomeVC.swift */,
+				2715E5EE204AE4A700C44A5C /* MainTabBarController.swift */,
 				27F4465B2046FE8100EC9DE3 /* PaymentVC.swift */,
 				27F4465D2046FE9B00EC9DE3 /* EnquiryVC.swift */,
 				2710991F2045AE6B00D848E7 /* Main.storyboard */,
@@ -73,6 +83,23 @@
 			path = "Rent Payment";
 			sourceTree = "<group>";
 		};
+		86084609AE6EEE8C34AF9BBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A3DF7B2FDB6D84A8604F81E /* Pods-Rent Payment.debug.xcconfig */,
+				C596329B317EA899FC437BF5 /* Pods-Rent Payment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2256F34D79B637D881D0CFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				574DB2DFC3FC848C95C63EB3 /* Pods_Rent_Payment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2710992D2045AE6B00D848E7 /* Build configuration list for PBXNativeTarget "Rent Payment" */;
 			buildPhases = (
+				87C7BF380B125C89038F5DB8 /* [CP] Check Pods Manifest.lock */,
 				271099142045AE6B00D848E7 /* Sources */,
 				271099152045AE6B00D848E7 /* Frameworks */,
 				271099162045AE6B00D848E7 /* Resources */,
+				FDCFE7C28A756F474C235AE3 /* [CP] Embed Pods Frameworks */,
+				BBF91E1E40652C3B2AA601AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +170,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87C7BF380B125C89038F5DB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rent Payment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBF91E1E40652C3B2AA601AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rent Payment/Pods-Rent Payment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDCFE7C28A756F474C235AE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rent Payment/Pods-Rent Payment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Braintree/Braintree.framework",
+				"${BUILT_PRODUCTS_DIR}/BraintreeDropIn/BraintreeDropIn.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Braintree.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BraintreeDropIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rent Payment/Pods-Rent Payment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		271099142045AE6B00D848E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -147,6 +235,7 @@
 			files = (
 				271099242045AE6B00D848E7 /* Rent_Payment.xcdatamodeld in Sources */,
 				27F4465C2046FE8100EC9DE3 /* PaymentVC.swift in Sources */,
+				2715E5EF204AE4A700C44A5C /* MainTabBarController.swift in Sources */,
 				27F4465A2046FE6100EC9DE3 /* HomeVC.swift in Sources */,
 				27F4465E2046FE9B00EC9DE3 /* EnquiryVC.swift in Sources */,
 				2710991C2045AE6B00D848E7 /* AppDelegate.swift in Sources */,
@@ -284,6 +373,7 @@
 		};
 		2710992E2045AE6B00D848E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A3DF7B2FDB6D84A8604F81E /* Pods-Rent Payment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +389,7 @@
 		};
 		2710992F2045AE6B00D848E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C596329B317EA899FC437BF5 /* Pods-Rent Payment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

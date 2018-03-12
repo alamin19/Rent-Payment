@@ -8,16 +8,35 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
+import Braintree
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let urlScheme = "com.alamin.Rent-Payment"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        IQKeyboardManager.sharedManager().enable = true
+        BTAppSwitch.setReturnURLScheme(urlScheme)
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+        if url.scheme?.localizedCaseInsensitiveCompare(urlScheme) == .orderedSame {
+            return BTAppSwitch.handleOpen(url, options: options)
+        }
+        return false
+    }
+    
+    // If you support iOS 7 or 8, add the following method.
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        if url.scheme?.localizedCaseInsensitiveCompare(urlScheme) == .orderedSame {
+            return BTAppSwitch.handleOpen(url, sourceApplication: sourceApplication)
+        }
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

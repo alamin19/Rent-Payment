@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,9 +14,8 @@
         <!--Navigation Controller-->
         <scene sceneID="B51-Ea-6sP">
             <objects>
-                <navigationController id="jz6-tI-sUB" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="jz6-tI-sUB" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lff-ml-y2o">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -33,15 +33,49 @@
                     <view key="view" contentMode="scaleToFill" id="azE-0H-ihT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WB-qc-pkv">
+                                <rect key="frame" x="137" y="313" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TRO-5H-ekP"/>
+                                    <constraint firstAttribute="width" constant="100" id="bnd-86-oSp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Pay">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPaymentClicked:" destination="ePg-P7-HMF" eventType="touchUpInside" id="suf-v5-AxJ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select which month you want to pay" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HCP-bl-gyu">
+                                <rect key="frame" x="137" y="243" width="100" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="0.69019607843137254" green="0.8784313725490196" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HCP-bl-gyu" firstAttribute="height" secondItem="1WB-qc-pkv" secondAttribute="height" id="D1Q-br-CCj"/>
+                            <constraint firstItem="HCP-bl-gyu" firstAttribute="centerX" secondItem="1WB-qc-pkv" secondAttribute="centerX" id="KPj-vL-PQa"/>
+                            <constraint firstItem="1WB-qc-pkv" firstAttribute="centerX" secondItem="azE-0H-ihT" secondAttribute="centerX" id="RNQ-SH-XnR"/>
+                            <constraint firstItem="1WB-qc-pkv" firstAttribute="top" secondItem="HCP-bl-gyu" secondAttribute="bottom" constant="30" id="VSa-UI-m5D"/>
+                            <constraint firstItem="HCP-bl-gyu" firstAttribute="width" secondItem="1WB-qc-pkv" secondAttribute="width" id="Va4-3k-CcB"/>
+                            <constraint firstItem="1WB-qc-pkv" firstAttribute="centerY" secondItem="azE-0H-ihT" secondAttribute="centerY" id="jhJ-ly-NHb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="snN-Dj-CDR"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pay" id="2Vo-4H-R08"/>
+                    <connections>
+                        <outlet property="txtAmount" destination="HCP-bl-gyu" id="Mvm-xO-ZjP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Nk-Yu-Y5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="54"/>
+            <point key="canvasLocation" x="1329" y="-9"/>
         </scene>
         <!--Home-->
         <scene sceneID="hRY-ay-Gct">
@@ -52,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to rental payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiD-rl-kcI">
-                                <rect key="frame" x="47" y="138" width="281.5" height="26.5"/>
+                                <rect key="frame" x="47" y="94" width="281.5" height="26.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -63,6 +97,9 @@
                                 <state key="normal" title="Make Payment">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnPaymentClicked:" destination="0Db-Il-fcq" eventType="touchUpInside" id="9rC-Jy-xTf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdm-Tj-XWS">
                                 <rect key="frame" x="177" y="323.5" width="20" height="20.5"/>
@@ -76,6 +113,9 @@
                                 <state key="normal" title="Submit Enquiries">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnEnquiryClicked:" destination="0Db-Il-fcq" eventType="touchUpInside" id="4Tj-pG-UI6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.69019607843137254" green="0.8784313725490196" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
@@ -96,17 +136,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYQ-Hl-6FS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1503" y="-747"/>
+            <point key="canvasLocation" x="1329" y="-779"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="WMm-CH-RNT">
             <objects>
-                <tabBarController id="cpw-8b-cgD" sceneMemberID="viewController">
+                <tabBarController id="cpw-8b-cgD" customClass="MainTabBarController" customModule="Rent_Payment" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="f1P-b6-wMs"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WTo-AQ-JrC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.69019607839999997" green="0.87843137250000003" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="tG7-FV-V1w" kind="relationship" relationship="viewControllers" id="CVR-Fc-FzK"/>
@@ -125,7 +166,6 @@
                     <tabBarItem key="tabBarItem" title="Home" image="ic_home" id="dhT-Pt-fOG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NAf-M3-wmm">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -135,7 +175,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9Q-WO-wRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="743" y="-747"/>
+            <point key="canvasLocation" x="441" y="-778"/>
         </scene>
         <!--Pay-->
         <scene sceneID="oAL-OT-ujz">
@@ -144,7 +184,6 @@
                     <tabBarItem key="tabBarItem" title="Pay" image="ic_payment" id="QLB-OQ-EE4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6ga-9i-l3w">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -154,7 +193,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2B-OR-M2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="54"/>
+            <point key="canvasLocation" x="441" y="-9"/>
         </scene>
         <!--Enquiries-->
         <scene sceneID="sGG-wu-hry">
@@ -163,14 +202,49 @@
                     <view key="view" contentMode="scaleToFill" id="ago-Mv-Ob2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit your enquiry below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69h-KN-QWG">
+                                <rect key="frame" x="20" y="84" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vbu-5f-WTM">
+                                <rect key="frame" x="20" y="135" width="335" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="aS1-md-Cgp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgA-X8-X0X">
+                                <rect key="frame" x="104" y="335" width="167.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="55l-OW-U8I"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.69019607843137254" green="0.8784313725490196" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="69h-KN-QWG" firstAttribute="centerX" secondItem="ago-Mv-Ob2" secondAttribute="centerX" id="2s5-gI-5hB"/>
+                            <constraint firstItem="69h-KN-QWG" firstAttribute="leading" secondItem="G70-Th-hLG" secondAttribute="leading" constant="20" id="Glp-AS-AYy"/>
+                            <constraint firstItem="CgA-X8-X0X" firstAttribute="top" secondItem="vbu-5f-WTM" secondAttribute="bottom" constant="50" id="KIv-Tz-WH8"/>
+                            <constraint firstItem="69h-KN-QWG" firstAttribute="top" secondItem="G70-Th-hLG" secondAttribute="top" constant="20" id="RMX-2L-XZb"/>
+                            <constraint firstItem="vbu-5f-WTM" firstAttribute="top" secondItem="69h-KN-QWG" secondAttribute="bottom" constant="30" id="U2x-ph-ikn"/>
+                            <constraint firstItem="CgA-X8-X0X" firstAttribute="width" secondItem="vbu-5f-WTM" secondAttribute="width" multiplier="1/2" id="UHg-Yx-QQt"/>
+                            <constraint firstItem="vbu-5f-WTM" firstAttribute="trailing" secondItem="69h-KN-QWG" secondAttribute="trailing" id="i7m-8a-0by"/>
+                            <constraint firstItem="CgA-X8-X0X" firstAttribute="centerX" secondItem="ago-Mv-Ob2" secondAttribute="centerX" id="ppf-UR-xQT"/>
+                            <constraint firstItem="vbu-5f-WTM" firstAttribute="leading" secondItem="69h-KN-QWG" secondAttribute="leading" id="tGb-1O-X9C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="G70-Th-hLG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Enquiries" id="mbk-Ip-cXn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMk-dp-o7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="882"/>
+            <point key="canvasLocation" x="2086" y="200"/>
         </scene>
         <!--Enquiries-->
         <scene sceneID="CQt-4C-qDF">
@@ -179,7 +253,6 @@
                     <tabBarItem key="tabBarItem" title="Enquiries" image="ic_enquiry" id="7qT-fg-iZf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fzp-2a-eCC">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -192,7 +265,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3Z-w7-b3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="792" y="882.45877061469275"/>
+            <point key="canvasLocation" x="441" y="828"/>
         </scene>
     </scenes>
     <resources>

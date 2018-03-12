@@ -10,6 +10,8 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    // MARK:- ViewController Lifecycle -
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,19 @@ class HomeVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    // MARK:- Action Methods -
+    
+    @IBAction func btnPaymentClicked(_ sender: UIButton) {
+        
+        self.tabBarController?.selectedIndex = 1
+    }
+    
+    
+    @IBAction func btnEnquiryClicked(_ sender: UIButton) {
+        
+        self.tabBarController?.selectedIndex = 2
+    }
+    
     /*
     // MARK: - Navigation
 
